@@ -1,3 +1,3 @@
-module github.com/MshadDr/goEcommerce
+module go_ecommerce
 
 go 1.19

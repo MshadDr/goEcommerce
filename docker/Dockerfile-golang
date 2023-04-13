@@ -1,0 +1,13 @@
+FROM golang:1.19
+
+RUN mkdir /app
+ADD . /app
+WORKDIR /app
+
+RUN go mod download
+
+COPY . .
+
+RUN go build -o /go_ecommerce
+
+CMD ["/go_ecommerce"]
